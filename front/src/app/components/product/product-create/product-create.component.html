@@ -1,0 +1,26 @@
+<mat-card>
+
+    <mat-card-title> Novo Registro</mat-card-title>
+    <form>
+
+        <mat-form-field>
+            <input matInput placeholder="Gasto" [(ngModel)]="product.descricao" name="gasto">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="product.nome" name="nome">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="tags" [(ngModel)]="product.tags" name="tags">
+        </mat-form-field>
+        
+        <mat-form-field>
+            <input matInput placeholder="Valor (R$)" [(ngModel)]="product.valor" name="valor"> 
+        </mat-form-field>
+
+    </form>
+
+
+
+<button mat-raised-button (click)="createProduct()" color="primary">Salvar</button>
+<button mat-raised-button (click)="cancel()">Cancelar</button>
+</mat-card>
